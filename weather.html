@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Forecast</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Card */
+.weather-container {
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Search Box */
+.search-box input {
+    width: 70%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #4facfe;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #00c6ff;
+}
+
+/* Current Temperature */
+.temperature {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.location {
+    font-size: 20px;
+    color: #555;
+}
+
+.description {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Forecast Section */
+.forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-day {
+    text-align: center;
+}
+
+.forecast-day h4 {
+    margin: 5px 0;
+}
+
+.forecast-day p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 400px) {
+    .weather-container {
+        width: 90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="weather-container">
+    
+    <div class="search-box">
+        <input type="text" placeholder="Enter city">
+        <button>Check</button>
+    </div>
+
+    <div class="location">Kochi</div>
+    <div class="temperature">32°C</div>
+    <div class="description">Sunny</div>
+
+    <div class="forecast">
+        <div class="forecast-day">
+            <h4>Mon</h4>
+            <p>30°C</p>
+        </div>
+        <div class="forecast-day">
+            <h4>Tue</h4>
+            <p>29°C</p>
+        </div>
+        <div class="forecast-day">
+            <h4>Wed</h4>
+            <p>31°C</p>
+        </div>
+        <div class="forecast-day">
+            <h4>Thu</h4>
+            <p>28°C</p>
+        </div>
+        <div class="forecast-day">
+            <h4>Fri</h4>
+            <p>33°C</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
